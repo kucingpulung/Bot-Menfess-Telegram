@@ -1,0 +1,68 @@
+{
+    "name": "Telegram Files Store Bot",
+    "description": "A Telegram Files Store Bot in Pyrogram by @AbirHasan2005",
+    "keywords": [
+        "telegram",
+        "files",
+        "store",
+        "bot"
+    ],
+    "repository": "https://github.com/AbirHasan2005/PyroFilesStoreBot",
+    "website": "https://telegram.dog/AbirHasan2005",
+    "success_url": "https://t.me/Discovery_Updates",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot",
+            "value": "7nnn4n1"
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org or @TeleORG_Bot",
+            "value": "ef48386annnnne9e569c4a3b8"
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather XD",
+            "value": "18263nnnnnnnIjl973lwcfifiLYOKwqc-HK7Lk"
+        },
+        "LOG_CHANNEL": {
+            "description": "Your Bot Username which you sent to @BotFather (Without [@])",
+            "value": "-10nnnnn99"
+        },
+        "FORCESUB_CHANNEL": {
+            "description": "The Channel ID which will be used as Database. Example: -100123456789",
+            "value": "-100nnnnnnnnn1083"
+        },
+        "DB_CHANNEL": {
+            "description": "Bot Owner UserID",
+            "value": "-1001nnnnnmmm087"
+        },
+        "BLACKLISTED_CHANNEL": {
+            "description": "MongoDB Database URI for Saving UserID for Broadcast.",
+            "value": "-10nnnnnmm301073"
+        },
+        "CHANNEL_1": {
+            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
+            "value": "-100nnnnnmm1083"
+        },
+        "CHANNEL_2": {
+            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789",
+            "value": "-10011nnnnmm83",
+            "required": false
+        },
+        "CHANNEL_3": {
+            "description": "Banned unwanted members",
+            "value": "-1001nnnnmmm083",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
